@@ -343,7 +343,7 @@ Regional Comprehension</h2>
         <h2 class="title is-3">Model</h2>
         <div class="content has-text-justified">
           <p>
-            <b>RegionBLIP</b> consists of :
+            <b>RegionBLIP</b> consists of three primary modules: modal feature extraction, modal feature alignment, and LLM comprehension. The feature extraction module extracts features from different modalities, such as images (I) and point clouds (P). The feature alignment module aligns these modality features with text embeddings to facilitate the LLM's comprehension of these modality inputs. The final frozen LLM model processes these aligned modality features as input to generate the final text comprehension. RegionBLIP is a unified pre-training framework supporting LLM's comprehension of images, point clouds, and regional objects. For efficient pre-training, RegionBLIP freezes the Q-Former of BLIP2 and learns a set of modality-specific LoRA parameters for newly added modalities. To effectively extract region features from regular image features and irregular point cloud features, RegionBLIP proposes a unified scheme of position embedding-assisted region feature extraction modules.
           </p>
           <ul>
           </ul>
